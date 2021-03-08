@@ -9,9 +9,6 @@ function ShoppingCartIcon(props) {
   Ionicons.loadFont();
   const navigation = useNavigation();
   const cartItems = useSelector((state) => state)
-  console.log({ cartItems })
-
-
 
   return (
     <TouchableOpacity
