@@ -19,7 +19,9 @@ function CartScreen() {
   const cartItems = useSelector((state) => state)
   const dispatch = useDispatch()
 
-
+  const removeItemFromCart = (item) => {
+    dispatch({ type: REMOVE_FROM_CART, payload: item })
+  }
 
   return (
     <View
